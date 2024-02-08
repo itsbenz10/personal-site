@@ -26,7 +26,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Ben Zhou Portofolio</title>
+        <title>Ben Zhou Portfolio</title>
         <link rel="preconnect" href="https://fonts.googleapis.com"></link>
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin></link>
         <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"></link>
