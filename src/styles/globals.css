@@ -35,7 +35,7 @@ body {
 
 @font-face{
   font-family: "vogue";
-  src: url("../app/public/vogue.ttf")
+  src: url("../../public/vogue.ttf")
 }
 
 @font-face{

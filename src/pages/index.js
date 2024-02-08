@@ -1,21 +1,19 @@
 import Image from "next/image";
 import Head from "next/head";
 import { AiFillLinkedin, AiFillInstagram, AiFillGithub } from "react-icons/ai";
-import { Navbar } from "@/app/components/Navbar.js";
 import React from 'react';
 import { useDarkMode } from '@/app/components/darkModeProvider.js';
-import { Azeret_Mono } from 'next/font/google';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
-import slide_image1 from "../app/public/image0.png";
-import slide_image2 from "../app/public/image1.jpeg";
-import slide_image3 from "../app/public/image3.jpeg";
-import slide_image4 from "../app/public/image4.jpeg";
-import slide_image5 from "../app/public/image5.jpeg";
+import slide_image1 from "../../public/image0.png";
+import slide_image2 from "../../public/image1.jpeg";
+import slide_image3 from "../../public/image3.jpeg";
+import slide_image4 from "../../public/image4.jpeg";
+import slide_image5 from "../../public/image5.jpeg";
 
 import { BrowserRouter } from "react-router-dom";
 

@@ -1,7 +1,8 @@
 // Navbar.js
 import DarkToggle from "./darkMode.js";
-import { useDarkMode } from '@/app/components/darkModeProvider.js';
+import { useDarkMode } from '@/components/darkModeProvider.js';
 import "@/styles/globals.css";
+import Link from "next/link"
 
 // export function Navbar() {
 //     return (
@@ -21,7 +22,7 @@ import "@/styles/globals.css";
 // };
 
 // Navbar.js
-export function Navbar() {
+const Navbar = () =>{
   const { darkMode, toggleDarkMode } = useDarkMode();
 
   return (
@@ -33,7 +34,7 @@ export function Navbar() {
 
       <ul className="flex items-center gap-x-12">
       <li>
-      <a className={`transition-colors duration-500 ${darkMode ? 'dark:text-gray-100' : 'dark:text-gray-500'}`} to="@/pages/keyboard.js">Keyboard</a>
+      <Link className={`transition-colors duration-500 ${darkMode ? 'dark:text-gray-100' : 'dark:text-gray-500'}`} href="/keyboard">Keyboard</Link>
       </li>
       <li>
         <a className={`transition-colors duration-500 ${darkMode ? 'dark:text-gray-100' : 'dark:text-gray-500'}`}>Resume</a>
@@ -47,3 +48,4 @@ export function Navbar() {
   </div>
   );
 }
+export default Navbar
