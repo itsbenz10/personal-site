@@ -16,13 +16,16 @@ const Keyboard3D = () => {
 
   scene.traverse((node) => {
     if (node.isMesh) {
-      // You can set different colors or textures here
-      node.material.color.set('#FF0000'); // Red color
+      // Change the color of the material
+      // node.material.color.set('#00FF00'); // Green color
+
+      // Optionally, change the size of the model
+      node.scale.set(1.5, 1.5, 1.5); // Adjust the scale as needed
     }
   });
 
   return (
-    <mesh ref={keyboardRef}>
+    <mesh ref={keyboardRef} position={[0, -1, 0]} >
       {/* Use the loaded GLB model */}
       <primitive object={scene} />
     </mesh>

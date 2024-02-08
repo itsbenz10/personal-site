@@ -52,9 +52,13 @@ const KeyboardPage = () => {
       </Head>
       <div className={`${darkMode && " dark"}`}>
         <main className="dark:bg-dark-blue">
-          <section className="px-10 h-96">
+          <section className="px-10 h-full">
             {/* Render the 3D keyboard component */}
-            <Canvas camera={{ fov: 35, zoom: 1, near: 1, far: 1000 }}>
+            <Canvas camera={{rotation: [0, Math.PI, 0], fov: 1000, zoom: 1, near: 1, far: 1000, position: [0, 0, 0]}}>
+                {/* Add lights to the scene */}
+              <ambientLight intensity={0.5} />
+              <pointLight position={[5, 5, 5]} />
+
               <Keyboard3D />
             </Canvas>
           </section>
