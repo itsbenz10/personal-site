@@ -10,7 +10,6 @@ module.exports = {
   theme: {
     extend: {
       fontFamily:{
-        vogue: "vogue",
         urbanist:"urbanist"
         // azeret_mono: "azeret_mono"
       },
