@@ -1,6 +1,6 @@
 // Navbar.js
 import DarkToggle from "./darkMode.js";
-import { useDarkMode } from '@/components/darkModeProvider.js';
+import { useDarkMode } from '@/app/components/darkModeProvider.js';
 import "@/styles/globals.css";
 import Link from "next/link"
 

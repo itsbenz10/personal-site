@@ -52,16 +52,16 @@ const KeyboardPage = () => {
       </Head>
       <div className={`${darkMode && " dark"}`}>
         <main className="dark:bg-dark-blue">
-          <section className="px-10">
+          <section className="px-10 h-96">
             {/* Render the 3D keyboard component */}
-            <Canvas camera={{ fov: 35, zoom: 1.3, near: 1, far: 1000 }}>
+            <Canvas camera={{ fov: 35, zoom: 1, near: 1, far: 1000 }}>
               <Keyboard3D />
             </Canvas>
           </section>
         </main>
       </div>
       {/* Link back to other pages */}
-      <Link href="/index">Go to Home Page</Link>
+      <Link href="/">Go to Home Page</Link>
     </div>
   );
 };

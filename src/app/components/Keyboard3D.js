@@ -14,6 +14,13 @@ const Keyboard3D = () => {
   const loader = new GLTFLoader();
   const { scene } = useLoader(GLTFLoader, '/3d_keyboard.glb');
 
+  scene.traverse((node) => {
+    if (node.isMesh) {
+      // You can set different colors or textures here
+      node.material.color.set('#FF0000'); // Red color
+    }
+  });
+
   return (
     <mesh ref={keyboardRef}>
       {/* Use the loaded GLB model */}
