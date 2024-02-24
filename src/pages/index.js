@@ -60,9 +60,9 @@ export default function Home() {
               effect={'coverflow'}
               grabCursor={true}
               centeredSlides={true}
-              loop={false}
+              loop={true}
               slidesPerView={3}
-              spaceBetween={0}
+              spaceBetween={5}
               coverflowEffect={{
                 rotate: 0,
                 stretch: 0,
