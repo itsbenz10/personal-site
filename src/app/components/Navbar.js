@@ -28,7 +28,7 @@ const Navbar = () =>{
   return (
     // <nav className="py-12 px-10 mb-12 flex justify-between items-center ">
     <div className={`${darkMode && " dark"}`}>
-    <nav className={` m-0 round-b-lg transition-colors duration-500 ${darkMode ? "dark:bg-cool-gray" : "dark:bg-white" } py-12 px-10 flex justify-between items-center font-onest font-semibold`}>
+    <nav className={` m-0 round-b-lg transition-colors duration-500 ${darkMode ? "dark:bg-zinc-900" : "dark:bg-white" } py-12 px-10 flex justify-between items-center font-onest font-semibold`}>
       {/* <h1 className=" font-onest">Portofolio</h1> */}
       <h1 className={` ${darkMode ? 'dark:text-light-beige' : 'dark:text-dark-blue'} transition-colors duration-500`}>Portfolio</h1>
 

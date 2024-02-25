@@ -34,7 +34,7 @@ export default function Home() {
     
       <div className={`${darkMode && " dark"}`}>
       {/* <main className=" transition-all duration-500 dark:bg-slate-950 "> applied some transition to every object */}
-      <main className={`transition-all duration-500 dark:bg-ivory-gray `}> {/*applied some transition to every object */}
+      <main className={`transition-all duration-500 dark:bg-zinc-900 `}> {/*applied some transition to every object */}
 
           {/* <div className={`m-0 p-0 rounded-b-lg ${darkMode? "dark:bg-cool-gray" : "dark:bg-white" } transition-colors duration-500`}>
             <Navbar className={`dark: text-gray-100`} toggleDarkMode={handleDarkMode}/>
