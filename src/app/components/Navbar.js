@@ -30,14 +30,14 @@ const Navbar = () =>{
     <div className={`${darkMode && " dark"}`}>
     <nav className={` m-0 round-b-lg transition-colors duration-500 ${darkMode ? "dark:bg-zinc-900" : "dark:bg-white" } py-12 px-10 flex justify-between items-center font-onest font-semibold`}>
       {/* <h1 className=" font-onest">Portofolio</h1> */}
-      <h1 className={` ${darkMode ? 'dark:text-light-beige' : 'dark:text-dark-blue'} transition-colors duration-500`}>Portfolio</h1>
+      <a href="/"><h1 className={` ${darkMode ? 'dark:text-light-beige' : 'dark:text-dark-blue'} transition-colors duration-500`}>Portfolio</h1></a>
 
       <ul className="flex items-center gap-x-12">
       <li>
       <Link className={`transition-colors duration-500 ${darkMode ? 'dark:text-gray-100' : 'dark:text-gray-500'}`} href="/keyboard">Keyboard</Link>
       </li>
       <li>
-        <a className={`transition-colors duration-500 ${darkMode ? 'dark:text-gray-100' : 'dark:text-gray-500'}`}>Resume</a>
+        <a href="https://drive.google.com/file/d/1H-BdTbKOiVX-e3Qaqp8NOkL-89itofYP/view?usp=sharing" target="_blank" className={`transition-colors duration-500 ${darkMode ? 'dark:text-gray-100' : 'dark:text-gray-500'}`}>Resume</a>
       </li>
       <li>
           <DarkToggle />

@@ -39,10 +39,11 @@ export default function Home() {
           {/* <div className={`m-0 p-0 rounded-b-lg ${darkMode? "dark:bg-cool-gray" : "dark:bg-white" } transition-colors duration-500`}>
             <Navbar className={`dark: text-gray-100`} toggleDarkMode={handleDarkMode}/>
           </div> */}
+        <div id="scrollwrapper">
         <section  className="px-10">
           
           <div className="text-center p-10">
-            <h2 className="text-7xl py-2  font-urbanist font-semibold dark:text-light-beige">Ben Zhou</h2>
+            <h2 className="text-7xl py-10 pt-20 font-urbanist font-semibold dark:text-light-beige">Ben Zhou</h2>
             <h3 className="text-2xl py-2 dark:text-gray-100">Developer and Designer.</h3>
             <p className="text-medium py-5 leading-8 dark:text-gray-100">Avid Soccer fan, hobbyist and designer. Find me anywhere below!</p>
             {/*for future refererence leading is text space: leading-xxx*/}
@@ -52,10 +53,23 @@ export default function Home() {
             <a href="https://www.instagram.com/itsbenz10/" target="_blank" rel="noopener noreferrer"><AiFillInstagram className={`transition-colors duration:500 ${darkMode ? "dark:text-gray-100" : "text-gray-600"}`}/></a>
             <a href="https://github.com/itsbenz10" target="_blank" rel="noopener noreferrer"><AiFillGithub className={`transition-colors duration:500 ${darkMode ? "dark:text-gray-100" : "text-gray-600"}`}/></a>
           </div>
+
+          <div className={` mt-40 pt-10 transition-colors duration:500 ${darkMode ? "dark:border-gray-100" : "border-black"}`}>
+            <div id="mouse-scroll">
+              <div className="mouse border-2 border-solid border-zinc-900 dark:border-gray-100">
+                <div className="mouse-in dark:bg-gray-100 bg-zinc-900"></div>
+              </div>
+              <div >
+                  <span className="down-arrow-1 border-r-2 border-r-solid dark:border-r-gray-100 border-r-zinc-900 border-b-2 border-b-solid border-b-zinc-900 dark:border-b-gray-100"></span>
+                  <span className="down-arrow-2 border-r-2 border-r-solid dark:border-r-gray-100 border-r-zinc-900 border-b-2 border-b-solid border-b-zinc-900 dark:border-b-gray-100"></span>
+                  <span className="down-arrow-3 border-r-2 border-r-solid dark:border-r-gray-100 border-r-zinc-900 border-b-2 border-b-solid border-b-zinc-900 dark:border-b-gray-100"></span>
+              </div>
+            </div>
+          </div>
         </section>
-        <section className="px-10 my-15 py-10">
+        <section className="px-10 ">
           <div id="container" className="p-10 mx-auto my-auto justify-center">
-            <h2 className={` p-10 text-center text-2xl transition-colors duration:500 ${darkMode ? "dark:text-gray-100" : "text-black"}`}>Here is my latest camera roll</h2>
+            <h2 className={` p-10 text-center text-2xl transition-colors duration:500 ${darkMode ? "dark:text-gray-100" : "text-black"}`}>Here are some of my latest pictures</h2>
             <Swiper
               effect={'coverflow'}
               grabCursor={true}
@@ -90,6 +104,7 @@ export default function Home() {
             </Swiper>
           </div>
         </section>
+        </div>
       </main>
       <footer className={`transition-all duration-500 ${darkMode ? 'dark:bg-dark-blue' : 'dark:bg-slate-950'}`}></footer>
     </div>
